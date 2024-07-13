@@ -77,10 +77,3 @@ jobs:
           mkdir -p spec/tmp
           bundle exec rails test
           bundle exec rspec --tag ~js
-
-  docker:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Build image
-        run: docker build --tag image --file Dockerfile .

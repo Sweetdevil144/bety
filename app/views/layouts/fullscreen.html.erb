@@ -21,13 +21,13 @@
 
   <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" />
   <!-- Google Analytics (GA5)  tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PN4PE3MT2"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= CONFIG[:google_analytics_id] %>"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-2PN4PE3MT2');
+    gtag('config', '<%= CONFIG[:google_analytics_id] %>');
   </script>
 
 </head>

@@ -94,13 +94,13 @@
   <%#= stylesheet_link_tag 'themes/alphacube' %>
 
   <!-- Google Analytics (G4)  tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PN4PE3MT2"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= CONFIG[:google_analytics_id] %>"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-2PN4PE3MT2');
+    gtag('config', '<%= CONFIG[:google_analytics_id] %>');
   </script>
   <!-- Maintain the order of the following CSS until we can gut the "scaffold" CSS -->
   <!-- Old CSS -->

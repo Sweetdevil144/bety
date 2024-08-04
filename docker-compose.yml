@@ -10,6 +10,8 @@ services:
       - UNICORN_WORKER_PROCESSES=1
       - SECRET_KEY_BASE=thisisnotasecret
       - GOOGLE_ANALYTICS_ID=G-0000000000
+    volumes:
+      - bety:/home/bety/log
     depends_on:
       - postgres
     restart: unless-stopped
@@ -32,3 +34,4 @@ networks:
 
 volumes:
   postgres:
+  bety:
